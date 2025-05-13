@@ -1,0 +1,11 @@
+type: edu
+files:
+  - name: src/honestcalculator/Main.java
+    visible: true
+    learner_created: false
+  - name: test/HonestCalculatorTest.java
+    visible: false
+    learner_created: false
+feedback_link: https://hyperskill.org/projects/350/stages/2057/implement#comment
+status: Unchecked
+record: -1

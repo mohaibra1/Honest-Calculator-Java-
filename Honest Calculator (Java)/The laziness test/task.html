@@ -1,0 +1,44 @@
+<div class="step-text">
+<h5 id="description">Description</h5>
+<p>Implement the flowchart below. Take a good look — there're two functions. The old blocks are in red. Be careful; some flows can now work differently.</p>
+<p style="text-align: center;"><picture><source media="(max-width: 480px)" srcset="https://ucarecdn.com/0706cb45-ffba-4f2e-ab19-ab635467da58/-/stretch/off/-/resize/480x/-/format/webp/ 1x,https://ucarecdn.com/0706cb45-ffba-4f2e-ab19-ab635467da58/-/stretch/off/-/resize/960x/-/format/webp/ 2x,https://ucarecdn.com/0706cb45-ffba-4f2e-ab19-ab635467da58/-/stretch/off/-/resize/1440x/-/format/webp/ 3x" type="image/webp"/><source media="(max-width: 800px)" srcset="https://ucarecdn.com/0706cb45-ffba-4f2e-ab19-ab635467da58/-/stretch/off/-/resize/800x/-/format/webp/ 1x,https://ucarecdn.com/0706cb45-ffba-4f2e-ab19-ab635467da58/-/stretch/off/-/resize/1600x/-/format/webp/ 2x,https://ucarecdn.com/0706cb45-ffba-4f2e-ab19-ab635467da58/-/stretch/off/-/resize/2400x/-/format/webp/ 3x" type="image/webp"/><source srcset="https://ucarecdn.com/0706cb45-ffba-4f2e-ab19-ab635467da58/-/stretch/off/-/resize/1100x/-/format/webp/ 1x,https://ucarecdn.com/0706cb45-ffba-4f2e-ab19-ab635467da58/-/stretch/off/-/resize/2200x/-/format/webp/ 2x,https://ucarecdn.com/0706cb45-ffba-4f2e-ab19-ab635467da58/-/stretch/off/-/resize/3000x/-/format/webp/ 3x" type="image/webp"/><img alt="" height="2097" name="Stage4.jpg" src="https://ucarecdn.com/0706cb45-ffba-4f2e-ab19-ab635467da58/" width="1017"/></picture></p>
+<p>Functions:</p>
+<p style="text-align: center;"><picture><source media="(max-width: 480px)" srcset="https://ucarecdn.com/74e59427-a12d-4d48-8c7c-29008d46503b/-/stretch/off/-/resize/480x/-/format/webp/ 1x,https://ucarecdn.com/74e59427-a12d-4d48-8c7c-29008d46503b/-/stretch/off/-/resize/960x/-/format/webp/ 2x,https://ucarecdn.com/74e59427-a12d-4d48-8c7c-29008d46503b/-/stretch/off/-/resize/1440x/-/format/webp/ 3x" type="image/webp"/><source media="(max-width: 800px)" srcset="https://ucarecdn.com/74e59427-a12d-4d48-8c7c-29008d46503b/-/stretch/off/-/resize/800x/-/format/webp/ 1x,https://ucarecdn.com/74e59427-a12d-4d48-8c7c-29008d46503b/-/stretch/off/-/resize/1600x/-/format/webp/ 2x,https://ucarecdn.com/74e59427-a12d-4d48-8c7c-29008d46503b/-/stretch/off/-/resize/2400x/-/format/webp/ 3x" type="image/webp"/><source srcset="https://ucarecdn.com/74e59427-a12d-4d48-8c7c-29008d46503b/-/stretch/off/-/resize/1100x/-/format/webp/ 1x,https://ucarecdn.com/74e59427-a12d-4d48-8c7c-29008d46503b/-/stretch/off/-/resize/2200x/-/format/webp/ 2x,https://ucarecdn.com/74e59427-a12d-4d48-8c7c-29008d46503b/-/stretch/off/-/resize/3000x/-/format/webp/ 3x" type="image/webp"/><img alt="" height="1052" name="Stage4_function.jpg" src="https://ucarecdn.com/74e59427-a12d-4d48-8c7c-29008d46503b/" width="603"/></picture></p>
+<h5 id="objectives">Objectives</h5>
+<p>Implement the flowchart with two functions. Please, mind the recommendations below:</p>
+<ul>
+<li>Don't use the built-in functions to calculate from a string;</li>
+<li>Notice that the function <code class="java">is_one_digit()</code> is supposed to check whether it has an integer value in the <em><strong>mathematical sense</strong></em>, e.g. 3.0 is an integer, 3.1 is a non-integer number. Thus, do <strong>NOT</strong> check the type of variable, but the number itself.</li>
+<li>Copy the messages carefully. The tests will check if the correct message appears in the correct order. Don't add extra lines or characters.</li>
+</ul>
+<pre><code class="java">msg_6 = " ... lazy"
+
+msg_7 = " ... very lazy"
+
+msg_8 = " ... very, very lazy"
+
+msg_9 = "You are"</code></pre>
+<h5 id="example">Example</h5>
+<p>The greater-than symbol followed by a space (<code class="java">&gt; </code>) represents the user input. Note that it's not part of the input.</p>
+<p><strong>Example 1:</strong></p>
+<pre><code class="language-no-highlight">Enter an equation
+&gt; 2 / M
+You are ... lazy
+Yeah... division by zero. Smart move...
+Enter an equation
+&gt; 1 * M
+You are ... lazy ... very lazy ... very, very lazy
+0.0
+Do you want to store the result? (y / n):
+&gt; n
+Do you want to continue calculations? (y / n):
+&gt; y
+Enter an equation
+&gt; 899 * 0
+You are ... very, very lazy
+0.0
+Do you want to store the result? (y / n):
+&gt; n
+Do you want to continue calculations? (y / n):
+&gt; n</code></pre>
+</div>
