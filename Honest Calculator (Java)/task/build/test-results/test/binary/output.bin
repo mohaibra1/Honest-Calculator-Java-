@@ -1,54 +1,45 @@
 [1;31m
 Start test 1[0m
 Enter an equation
-
-> 2 + 1.1
-3.1
-[1;31m
-Start test 2[0m
-Enter an equation
-> 2 + m
-2Do you even know what numbers are? Stay focused!
-Enter an equation
-> 3 + 3
-6.0
-[1;31m
-Start test 3[0m
-Enter an equation
-> 2 + m
-2Do you even know what numbers are? Stay focused!
-Enter an equation
-> 3 n 3
-WYes ... an interesting math operation. You've slept through all classes, haven't you?
-Enter an equation
-> m - 2
-2Do you even know what numbers are? Stay focused!
-Enter an equation
 > 4 * 5
 20.0
++Do you want to store the result? (y / n):
+> y
+0Do you want to continue calculations? (y / n):
+> n
 [1;31m
-Start test 4[0m
-Enter an equation
-> 2 + m
-2Do you even know what numbers are? Stay focused!
-Enter an equation
-> 3 n 3
-WYes ... an interesting math operation. You've slept through all classes, haven't you?
-Enter an equation
-> 4 / 0
-)Yeah... division by zero. Smart move...
+Start test 2[0m
 Enter an equation
 
 > 4 * 5.2
 20.8
-[1;31m
-Start test 5[0m
++Do you want to store the result? (y / n):
+> y
+0Do you want to continue calculations? (y / n):
+> y
 Enter an equation
-
-> 2.0 + 1
-3.0
+> 1 + M
+21.8
++Do you want to store the result? (y / n):
+> y
+0Do you want to continue calculations? (y / n):
+> n
 [1;31m
-Start test 6[0m
+Start test 3[0m
 Enter an equation
-> 411 - 211
-200.0
+> 2 + 5
+7.0
++Do you want to store the result? (y / n):
+> n
+0Do you want to continue calculations? (y / n):
+> y
+Enter an equation
+> 21.0 / M
+)Yeah... division by zero. Smart move...
+Enter an equation
+> 5 + M
+5.0
++Do you want to store the result? (y / n):
+> y
+0Do you want to continue calculations? (y / n):
+> n

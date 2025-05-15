@@ -6,7 +6,7 @@ files:
   - name: test/HonestCalculatorTest.java
     visible: false
     learner_created: false
-feedback_link: https://hyperskill.org/projects/350/stages/2056/implement#comment
+feedback_link: https://hyperskill.org/learn/step/29062#comment
 status: Solved
 feedback:
   message: Congratulations!

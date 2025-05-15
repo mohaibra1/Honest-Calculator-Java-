@@ -6,6 +6,9 @@ files:
   - name: test/HonestCalculatorTest.java
     visible: false
     learner_created: false
-feedback_link: https://hyperskill.org/projects/350/stages/2058/implement#comment
-status: Unchecked
+feedback_link: https://hyperskill.org/learn/step/29064#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 15 May 2025 12:56:18 UTC"
 record: -1
