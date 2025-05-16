@@ -2,58 +2,68 @@
 Start test 1[0m
 Enter an equation
 
-> 4 * 5.5
-22.0
+> 4 * 5.0
+You are ... lazy
+20.0
 +Do you want to store the result? (y / n):
-> y
+> n
 0Do you want to continue calculations? (y / n):
 > n
 [1;31m
 Start test 2[0m
 Enter an equation
-> 11 * 11.1
-122.1
+
+> 2 + 5.5
+7.5
 +Do you want to store the result? (y / n):
 > y
+0Do you want to continue calculations? (y / n):
+> y
+Enter an equation
+> M - 9
+-1.5
++Do you want to store the result? (y / n):
+> n
 0Do you want to continue calculations? (y / n):
 > n
 [1;31m
 Start test 3[0m
+Enter an equation
+> 225 / 15
+15.0
++Do you want to store the result? (y / n):
+> y
+0Do you want to continue calculations? (y / n):
+> y
 Enter an equation
 > 1 * 5
  You are ... lazy ... very lazy
 5.0
 +Do you want to store the result? (y / n):
 > y
+-Are you sure? It is only one digit! (y / n)
+> y
+BDon't be silly! It's just one number! Add to the memory? (y / n)
+> n
 0Do you want to continue calculations? (y / n):
 > y
 Enter an equation
-> 0 + M
-&You are ... lazy ... very, very lazy
+	> M - 10
 5.0
 +Do you want to store the result? (y / n):
 > y
-0Do you want to continue calculations? (y / n):
-> n
-[1;31m
-Start test 4[0m
-Enter an equation
-> 2 / M
-You are ... lazy
-)Yeah... division by zero. Smart move...
-Enter an equation
-> 1 * M
-4You are ... lazy ... very lazy ... very, very lazy
-0.0
-+Do you want to store the result? (y / n):
-> n
+-Are you sure? It is only one digit! (y / n)
+> y
+BDon't be silly! It's just one number! Add to the memory? (y / n)
+> y
+@Last chance! Do you really want to embarrass yourself? (y / n)
+> y
 0Do you want to continue calculations? (y / n):
 > y
 Enter an equation
-
-> 899 * 0
-You are ... very, very lazy
-0.0
+> M / M
+You are ... lazy
+1.0
 +Do you want to store the result? (y / n):
 > n
 0Do you want to continue calculations? (y / n):

@@ -14,36 +14,25 @@ public class HonestCalculatorTest extends StageTest {
             " ... lazy",
             " ... very lazy",
             " ... very, very lazy",
-            "You are"};
+            "You are",
+            "Are you sure? It is only one digit! (y / n)",
+            "Don't be silly! It's just one number! Add to the memory? (y / n)",
+            "Last chance! Do you really want to embarrass yourself? (y / n)"
+    };
 
     private Object[][] data = {
             {
-                    new String[][] {{"4 * 5.5", addMemory("22.0")}, {"y", msg[5]}, {"n", ""}}
+                    new String[][] {{"4 * 5.0", join("\n", msg[9] + msg[6], addMemory("20.0"))}, {"n", msg[5]}, {"n", ""}}
+            },
+            {
+                    new String[][] {{"2 + 5.5", addMemory("7.5")}, {"y", msg[5]}, {"y", msg[0]}, {"M - 9", addMemory("-1.5")}, {"n", msg[5]}, {"n", ""}}
             },
             {
                     new String[][] {
-                            {"11 * 11.1", addMemory("122.1")}, {"y", msg[5]}, {"n", ""}
-                    }
-            },
-            {
-                    new String[][] {
-                                    {"1 * 5", join("\n", msg[9] + msg[6] + msg[7], addMemory("5.0"))},
-                                    {"y", msg[5]},
-                                    {"y", msg[0]},
-                                    {"0 + M", join("\n", msg[9] + msg[6] + msg[8], addMemory("5.0"))},
-                                    {"y", msg[5]},
-                                    {"n", ""}
-                    }
-            },
-            {
-                    new String[][] {
-                            {"2 / M", join("\n", msg[9] + msg[6], addEnter(msg[3]))},
-                            {"1 * M", join("\n", msg[9] + join("", 6, 9), addMemory("0.0"))},
-                            {"n", msg[5]},
-                            {"y", msg[0]},
-                            {"899 * 0", join("\n", msg[9] + msg[8], addMemory("0.0"))},
-                            {"n", msg[5]},
-                            {"n", ""}
+                            {"225 / 15", addMemory("15.0")}, {"y", msg[5]}, {"y",msg[0]},
+                            {"1 * 5", join("\n", msg[9] + msg[6] + msg[7], addMemory("5.0"))}, {"y", msg[10]}, {"y", msg[11]}, {"n", msg[5]}, {"y", msg[0]},
+                            {"M - 10", addMemory("5.0")}, {"y", msg[10]}, {"y", msg[11]}, {"y", msg[12]}, {"y", msg[5]}, {"y", msg[0]},
+                            {"M / M",  join("\n", msg[9] + msg[6], addMemory("1.0"))}, {"n", msg[5]}, {"n", ""}
                     }
             }
 
@@ -68,27 +57,14 @@ public class HonestCalculatorTest extends StageTest {
         }
 
         if (!pr.isFinished())
-            return CheckResult.wrong("Your program is unnecessarily waiting for input.");
+            return CheckResult.wrong("Your program unnecessarily waiting for input.");
 
         return CheckResult.correct();
     }
 
-    private String addEnter(String text) {
-        return join("\n", text, msg[0]);
-    }
 
     private String addMemory(String text) {
-        return join("\n", text, msg[4]);
-    }
-
-    private String join(String delim, int start, int end) {
-        StringBuilder stringBuilder = new StringBuilder();
-
-        for (int i = start; i < end; i++) {
-            stringBuilder.append(msg[i]);
-        }
-
-        return stringBuilder.toString();
+        return String.format("%s\n%s", text, msg[4]);
     }
 
     private String join(String delim, String ... words) {
